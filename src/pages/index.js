@@ -24,7 +24,7 @@ const Index = () => {
     return (
         <main>
             <SEO title="LukeHome"
-                description="Lukeのホームページです。" 
+                description="Student / Programmer" 
                 image="/icons/icon-96x96.png" 
                 lang="ja"
             />

@@ -27,7 +27,6 @@ function SEO({ title, description, image, lang  }) {
 
   const {
     defaultTitle,
-    titleTemplate,
     defaultDescription,
     siteUrl,
     defaultImage,
@@ -60,6 +59,7 @@ function SEO({ title, description, image, lang  }) {
       <meta name="twitter:title" content={seo.title} />
       <meta name="twitter:description" content={seo.description} />
       <meta name="twitter:image" content={seo.image} />
+      <meta name="twitter:image:alt" content="Lukeのサイト" />
     </Helmet>
   )
 }
