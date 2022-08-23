@@ -91,12 +91,11 @@ body {
 
 li.SNSIcon {
     display: inline-block;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
 }
 
 .SNSIcon {
     width: 1.2rem;
     fill: currentColor;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
-    border-radius: 0.6em;
 }
