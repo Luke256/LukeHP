@@ -25,7 +25,7 @@ const Index = () => {
         <main>
             <SEO title="LukeHome"
                 description="Student / Programmer" 
-                image="/icons/icon-96x96.png" 
+                image="/icons/icon-512x512.png" 
                 lang="ja"
             />
             <Layer PageTitle="Home">
@@ -59,9 +59,9 @@ const Index = () => {
                 <MarkedContent Title="Links">
                     <JumpLink Href="https://twitter.com/luke02561">Twitter</JumpLink>
                     <JumpLink Href="https://github.com/Luke256">GitHub</JumpLink>
-                    <JumpLink Href="https://atcoder.jp/yuta28">AtCoder</JumpLink>
+                    <JumpLink Href="https://atcoder.jp/users/yuta28">AtCoder</JumpLink>
                     <JumpLink Href="https://qiita.com/luke02561">Qiita</JumpLink>
-                    <JumpLink Href="https://zenn.dev/luke02561">Zenn</JumpLink>
+                    <JumpLink Href="https://zenn.dev/luke256">Zenn</JumpLink>
                     <JumpLink Href="https://www.resume.id/luke256">resume</JumpLink>
                 </MarkedContent>
             </Layer>
