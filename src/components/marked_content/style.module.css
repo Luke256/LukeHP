@@ -1,0 +1,10 @@
+.content {
+    margin: auto;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.heading {
+    text-align: center;
+    margin: 0;
+}
