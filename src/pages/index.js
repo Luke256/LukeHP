@@ -25,7 +25,7 @@ const Index = () => {
         <main>
             <SEO title="LukeHome"
                 description="Lukeのホームページです。" 
-                image="https://luke256.dev/icons/icon-96x96.png" 
+                image="/icons/icon-96x96.png" 
                 lang="ja"
             />
             <Layer PageTitle="Home">
