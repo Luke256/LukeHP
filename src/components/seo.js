@@ -24,6 +24,7 @@ function SEO({ title, description, image, lang  }) {
     `
   )
 
+
   const {
     defaultTitle,
     titleTemplate,
