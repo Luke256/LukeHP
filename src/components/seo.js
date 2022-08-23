@@ -44,7 +44,6 @@ function SEO({ title, description, image, lang  }) {
 
   return (
     <Helmet>
-      <title>{seo.title}</title>
       <html lang={seo.lang} />
       <template>{seo.titleTemplate}</template>
       <meta name="description" content={seo.description} />
