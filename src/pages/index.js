@@ -3,6 +3,7 @@ import Layer from '../components/layer'
 import MarkedContent from '../components/marked_content'
 import Content from '../components/content';
 import JumpLink from '../components/jumplink';
+import SEO from '../components/seo';
 
 const Index = () => {
     // var color, rating;
@@ -22,6 +23,11 @@ const Index = () => {
 
     return (
         <main>
+            <SEO title="LukeHome"
+                description="Lukeのホームページです。" 
+                image="/assets/icon-96x96.png" 
+                lang="ja"
+            />
             <Layer PageTitle="Home">
                 <MarkedContent Title="About Me" background="#DADEE5">
                     <p>
