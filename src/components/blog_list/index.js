@@ -1,4 +1,4 @@
-import * as React from 'React'
+import * as React from 'react'
 import { Link } from 'gatsby'
 import Table from '../table'
 import { bloglink } from './blog_list.module.css'
