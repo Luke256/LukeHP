@@ -59,5 +59,19 @@ module.exports = {
         },
       },
       `gatsby-plugin-twitter`,
+      {
+        resolve: "gatsby-plugin-firebase",
+        options: {
+          credentials: {
+            apiKey: "AIzaSyAvgJPfCzCnL-qlHzI5sh7DRljk_7E6IJg",
+            authDomain: "lukehp-a9018.firebaseapp.com",
+            projectId: "lukehp-a9018",
+            storageBucket: "lukehp-a9018.appspot.com",
+            messagingSenderId: "839622773986",
+            appId: "1:839622773986:web:9c7cea7d7ef347c8c662bb",
+            measurementId: "G-B7J0YGJ7RG"
+          }
+        }
+      },
   ],
 }
