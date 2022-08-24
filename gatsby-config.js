@@ -14,8 +14,8 @@ module.exports = {
       {
         resolve: `gatsby-plugin-manifest`,
         options: {
-          name: "明日の自分のために",
-          short_name: "gan0803blog",
+          name: "Luke",
+          short_name: "Luke",
           start_url: "/",
           background_color: "#ffea18",
           theme_color: "#5155c0",
@@ -27,10 +27,37 @@ module.exports = {
         resolve: "gatsby-plugin-react-svg",
         options: {
           rule: {
-            include: /assets/,
+            include: /content/,
           }
         }
       },
       `gatsby-plugin-react-helmet`,
+      {
+        resolve: `gatsby-source-filesystem`,
+        options: {
+            name: `posts`,
+            path: `${__dirname}/content/posts`
+        }
+      },
+      {
+        resolve: `gatsby-transformer-remark`,
+        options: {
+          plugins: [
+            `gatsby-remark-copy-linked-files`,
+            `gatsby-remark-responsive-iframe`,
+            {
+                resolve: `gatsby-remark-prismjs`,
+                options: {
+                    classPrefix: "language-",
+                    inlineCodeMarker: null,
+                    aliases: {},
+                    showLineNumbers: false,
+                    noInlineHighlight: false,
+                },
+            },
+          ],
+        },
+      },
+      `gatsby-plugin-twitter`,
   ],
 }

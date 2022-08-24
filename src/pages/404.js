@@ -1,10 +1,16 @@
 import * as React from 'react'
 import Layer from '../components/layer'
 import Content from '../components/content'
+import Seo from '../components/seo'
 
 const NotFoundPage = () => {
     return (
         <Layer PageTitle="404 error">
+            <Seo title="LukeHome"
+                description="Student / Programmer" 
+                image="/icons/icon-512x512.png" 
+                lang="ja"
+            />
             <Content Title="お探しのページが見つかりませんでした。">
                 申し訳ありません。お探しのページが見つかりませんでした。<br/>
                 お探しののページは削除または移動された可能性があります。

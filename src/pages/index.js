@@ -1,29 +1,19 @@
 import * as React from 'react'
+import { graphql } from 'gatsby';
 import Layer from '../components/layer'
 import MarkedContent from '../components/marked_content'
 import Content from '../components/content';
 import JumpLink from '../components/jumplink';
-import SEO from '../components/seo';
+import Seo from '../components/seo';
+import AchievementView from '../components/achievement';
+import BlogList from '../components/blog_list';
+import LinkButton from '../components/linkbutton';
 
-const Index = () => {
-    // var color, rating;
-    // fetch("https://kyopro-ratings.herokuapp.com/json?atcoder=yuta28")
-    //     .then((response) => {
-    //         return response.json();
-    //     })
-    //     .then((blob) => {
-    //         color = blob.atcoder.color;
-    //         rating = blob.atcoder.rating;
-    //         console.log(color);
-    //         console.log(rating);
-    //     })
-    //     .catch((reason) => {
-    //         console.log(reason)
-    //     });
+const Index = ({ data }) => {
 
     return (
         <main>
-            <SEO title="LukeHome"
+            <Seo title="LukeHome"
                 description="Student / Programmer" 
                 image="/icons/icon-512x512.png" 
                 lang="ja"
@@ -34,6 +24,7 @@ const Index = () => {
                         プログラミング好きの高校二年生です。中学一年生からC++に触れて、Pythonなども使いながら競技プログラミング/アプリ開発などをやってます。<br/>
                         たまにボルダリングをやってたりします
                     </p>
+                    <LinkButton to='/about'>About</LinkButton>
                 </MarkedContent>
                 <MarkedContent Title="Skills">
                     <Content Title="プログラミング">
@@ -46,17 +37,14 @@ const Index = () => {
                     </Content>
                 </MarkedContent>
                 <MarkedContent Title="Achievements" background="#D3DAE5">
-                    <ul>
-                        <li>AtCoder Algorithm:1375 / Heuristic:889 (2022-03-21)</li>
-                        <li>OnlineMathContest 900 (2022-3-24)</li>
-                        <li>第20回 日本情報オリンピック ランクB</li>
-                        <li>第2回 学力向上アプリコンテスト デザイン優秀賞</li>
-                        <li>パソコン甲子園2021 46位</li>
-                        <li>第21回 日本情報オリンピック 本戦ランクC</li>
-                        
-                    </ul>
+                    <AchievementView></AchievementView>
+                    <LinkButton to='/achieve'>Achievements</LinkButton>
                 </MarkedContent>
-                <MarkedContent Title="Links">
+                <MarkedContent Title="Blogs">
+                    <BlogList data={data.allMarkdownRemark}></BlogList>
+                    <LinkButton to='/blogs'>Blogs</LinkButton>
+                </MarkedContent>
+                <MarkedContent Title="Links" background="#D3DAE5">
                     <JumpLink Href="https://twitter.com/luke02561">Twitter</JumpLink>
                     <JumpLink Href="https://github.com/Luke256">GitHub</JumpLink>
                     <JumpLink Href="https://atcoder.jp/users/yuta28">AtCoder</JumpLink>
@@ -70,3 +58,17 @@ const Index = () => {
 };
 
 export default Index;
+
+export const query = graphql`
+query {
+    allMarkdownRemark(sort: {fields: frontmatter___date, order: DESC}, limit: 5) {
+      nodes {
+        frontmatter {
+          date(formatString: "YYYY/MM/DD")
+          title
+          slug
+        }
+      }
+    }
+  }
+`
