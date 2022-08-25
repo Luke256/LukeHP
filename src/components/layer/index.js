@@ -1,4 +1,4 @@
-import * as React from 'react'
+import React from 'react'
 import { Link } from 'gatsby'
 import { header, headerList, navItem, navLink, mainContent, footer, parent, SNSIcon } from './layer.module.css'
 import TwitterIcon from '/content/assets/twitter.svg'
@@ -6,6 +6,7 @@ import GithubIcon from '/content/assets/github.svg'
 import ZennIcon from '/content/assets/zenn.svg'
 
 const Layer = ({PageTitle, children}) => {
+
     return (
         <div className={parent}>
             <title>{PageTitle} | Luke</title>
