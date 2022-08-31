@@ -7,6 +7,11 @@ import Content from '../components/content'
 const Blogs = ({data}) => {
     return (
         <Layer PageTitle="Blogs">
+            <Seo title="LukeHome"
+                description="Student / Programmer" 
+                image="/icons/icon-512x512.png" 
+                lang="ja"
+            />
             <Content Title="Lukeのブログ">
                 <BlogList data={data.allMarkdownRemark}></BlogList>
             </Content>
