@@ -13,6 +13,9 @@ module.exports = {
         lang: `ja`,
     },
     plugins: [
+        `gatsby-plugin-image`,
+        `gatsby-plugin-sharp`,
+        `gatsby-transformer-sharp`,
         {
             resolve: `gatsby-plugin-manifest`,
             options: {
@@ -45,7 +48,6 @@ module.exports = {
             resolve: `gatsby-transformer-remark`,
             options: {
                 plugins: [
-                    `gatsby-remark-copy-linked-files`,
                     `gatsby-remark-responsive-iframe`,
                     {
                         resolve: `gatsby-remark-prismjs`,
@@ -55,6 +57,20 @@ module.exports = {
                             aliases: {},
                             showLineNumbers: false,
                             noInlineHighlight: false,
+                        },
+                    },
+                    {
+                        resolve: `gatsby-remark-copy-linked-files`,
+                        options: {
+                            destinationDir: f => `downloads/${f.hash}/${f.name}`,
+                            ignoreFileExtensions: [`png`, `jpg`, `jpeg`],
+                        },
+                    },
+                    {
+                        resolve: `gatsby-remark-images`,
+                        options: {
+                            maxWidth: 600,
+                            wrapperStyle: `padding: 16px;`,
                         },
                     },
                 ],
@@ -72,5 +88,6 @@ module.exports = {
                 },
             },
         },
+        `gatsby-plugin-fontawesome-css`,
     ],
 }
