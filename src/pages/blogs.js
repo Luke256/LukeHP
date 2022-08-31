@@ -3,6 +3,7 @@ import BlogList from '../components/blog_list'
 import { graphql } from 'gatsby'
 import Layer from '../components/layer'
 import Content from '../components/content'
+import Seo from '../components/seo'
 
 const Blogs = ({data}) => {
     return (
