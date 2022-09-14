@@ -18,7 +18,7 @@ const About = () => {
                 稀によくボルダリングをやってたりしてます<br/>
                 <br/>
                 Name: Luke (Luke256)<br/>
-                Birthday: Feb 8 2008
+                Birthday: Feb 8 2006
             </Content>
             <Content Title="About this Page">
                 <p>このページはGatsby.jsで作成しています。ブログページも開設予定。</p>
