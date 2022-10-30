@@ -88,7 +88,6 @@ module.exports = {
                 },
             },
         },
-        `gatsby-plugin-fontawesome-css`,
-        `react-sharingbuttons`
+        `gatsby-plugin-fontawesome-css`
     ],
 }
