@@ -99,3 +99,8 @@ li.SNSIcon {
     width: 1.2rem;
     fill: currentColor;
 }
+
+.footerLink {
+    text-decoration: none;
+    color: #eee;
+}

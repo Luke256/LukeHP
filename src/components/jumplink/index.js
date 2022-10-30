@@ -6,7 +6,7 @@ const JumpLink = ({Href, children}) => {
     return (
         <div>
             <a href={Href} target="_blank" rel="noreferrer">
-                <BsBoxArrowUpRight className={jumplink} /> {children}
+                <BsBoxArrowUpRight className={jumplink} />{children}
             </a>
         </div>
     )

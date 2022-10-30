@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { header, headerList, navItem, navLink, mainContent, footer, parent, SNSIcon } from './layer.module.css'
+import { header, headerList, navItem, navLink, mainContent, footer, parent, SNSIcon, footerLink } from './layer.module.css'
 import TwitterIcon from '/content/assets/twitter.svg'
 import GithubIcon from '/content/assets/github.svg'
 import ZennIcon from '/content/assets/zenn.svg'
@@ -30,7 +30,7 @@ const Layer = ({PageTitle, children}) => {
             </main>
 
             <footer className={footer}>
-                &copy; Luke 2022
+                &copy; Luke 2022, Built with <a href='https://www.gatsbyjs.com/' className={footerLink}>Gatsby</a>
             </footer>
 
         </div>

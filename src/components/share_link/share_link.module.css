@@ -1,0 +1,19 @@
+.react-sharing-button__link {
+    align-items: center;
+    display: inline-flex;
+    font-size: 11px;
+    height: 20px;
+    justify-content: center;
+    margin: 0;
+  }
+  
+  .react-sharing-button--facebook,
+  .react-sharing-button--twitter {
+    margin: 0;
+    padding: 0 0.4rem;
+  }
+  
+  .react-sharing-button--facebook {
+    margin-right: 0.4rem;
+  }
+  
