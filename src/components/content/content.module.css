@@ -18,6 +18,8 @@
 .detail {
     margin-top: 16px;
     margin-left: 32px;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 .content {
