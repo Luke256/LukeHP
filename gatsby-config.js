@@ -4,11 +4,11 @@ module.exports = {
     siteMetadata: {
         title: `LukeHome`,
         titleTemplate: `%s | Luke`,
-        description: `Lukeのホームページです`,
+        description: `Student / Programmer`,
         author: `Y.K`,
         siteUrl: `https://luke256.dev`,
         url: `https://luke256.dev`,
-        image: `/assets/icon-96x96.png`,
+        image: `/icons/icon-512x512.png`,
         twitterUsername: `@Luke02561`,
         lang: `ja`,
     },
@@ -36,7 +36,6 @@ module.exports = {
                 }
             }
         },
-        `gatsby-plugin-react-helmet`,
         {
             resolve: `gatsby-source-filesystem`,
             options: {

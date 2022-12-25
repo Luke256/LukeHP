@@ -7,11 +7,6 @@ import Seo from '../components/seo'
 const Achieve = () => {
     return (
         <Layer PageTitle="Achievements">
-            <Seo title="LukeHome"
-                description="Student / Programmer" 
-                image="/icons/icon-512x512.png" 
-                lang="ja"
-            />
             <Content Title="Achievement">
                 <AchievementView></AchievementView>
             </Content>
@@ -21,3 +16,7 @@ const Achieve = () => {
 }
 
 export default Achieve
+
+export const Head = () => (
+    <Seo title="Achievement" pathname="achieve"/>
+)

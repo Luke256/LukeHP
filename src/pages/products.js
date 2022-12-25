@@ -6,13 +6,9 @@ import Seo from '../components/seo';
 const Products = () => {
     return (
         <Layer PageTitle="Products">
-            <Seo title="LukeHome"
-                description="Student / Programmer" 
-                image="/icons/icon-512x512.png" 
-                lang="ja"
-            />
             <Content Title="Products">
                 {
+                    "Comming Soon..."
                 }
             </Content>
         </Layer>
@@ -20,3 +16,7 @@ const Products = () => {
 };
 
 export default Products
+
+export const Head = () => (
+    <Seo title="Products" pathname="products"/>
+)

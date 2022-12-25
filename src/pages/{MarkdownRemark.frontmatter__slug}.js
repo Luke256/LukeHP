@@ -13,11 +13,6 @@ const PostTemplate = ({ data }) => {
 
     return (
         <Layer PageTitle={markdownRemark.frontmatter.title}>
-            <Seo title={markdownRemark.frontmatter.title + " | Luke"}
-                description="Student / Programmer"
-                image="/icons/icon-512x512.png"
-                lang="ja"
-            />
             <div>
                 <BlogContent markdownRemark={markdownRemark} footer={footer}></BlogContent>
             </div>
@@ -44,3 +39,11 @@ export const pageQuery = graphql`
     }
   }
 `
+
+export const Head = ({ data }) => (
+  <Seo title={data.markdownRemark.frontmatter.title}
+                description="Student / Programmer"
+                image="/icons/icon-512x512.png"
+                lang="ja"
+            />
+)

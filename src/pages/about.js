@@ -6,11 +6,6 @@ import Seo from '../components/seo'
 const About = () => {
     return (
         <Layer PageTitle="About">
-            <Seo title="LukeHome"
-                description="Student / Programmer" 
-                image="/icons/icon-512x512.png" 
-                lang="ja"
-            />
             <Content Title="Prolile">
                 LukeというHNで活動している高校二年生です。プログラミングやWeb制作、電子工作を趣味にしています。<br/>
                 プログラミングは読む程度なら大体の言語(BrainF**k含め)はいけると思います。競技プログラミングが好きです。<br/>
@@ -27,4 +22,8 @@ const About = () => {
     )
 }
 
-export default About
+export default About;
+
+export const Head = () => (
+    <Seo title="About" pathname="about"/>
+)

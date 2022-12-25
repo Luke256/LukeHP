@@ -6,11 +6,6 @@ import Seo from '../components/seo'
 const NotFoundPage = () => {
     return (
         <Layer PageTitle="404 error">
-            <Seo title="LukeHome"
-                description="Student / Programmer" 
-                image="/icons/icon-512x512.png" 
-                lang="ja"
-            />
             <Content Title="お探しのページが見つかりませんでした。">
                 申し訳ありません。お探しのページが見つかりませんでした。<br/>
                 お探しののページは削除または移動された可能性があります。
@@ -20,6 +15,10 @@ const NotFoundPage = () => {
 }
 
 export default NotFoundPage
+
+export const Head = () => (
+    <Seo title="PageNotFound" pathname="404"/>
+)
 
 // import * as React from "react"
 // import { Link } from "gatsby"

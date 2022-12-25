@@ -13,11 +13,6 @@ const Index = ({ data }) => {
 
     return (
         <main>
-            <Seo title="LukeHome"
-                description="Student / Programmer" 
-                image="/icons/icon-512x512.png" 
-                lang="ja"
-            />
             <Layer PageTitle="Home">
                 <MarkedContent Title="About Me" background="#DADEE5">
                     <p>
@@ -58,6 +53,10 @@ const Index = ({ data }) => {
 };
 
 export default Index;
+
+export const Head = () => (
+    <Seo title="Home" pathname=""/>
+)
 
 export const query = graphql`
 query {
