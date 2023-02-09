@@ -46,6 +46,7 @@ const Index = ({ data }) => {
                     <JumpLink Href="https://qiita.com/luke02561">Qiita</JumpLink>
                     <JumpLink Href="https://zenn.dev/luke256">Zenn</JumpLink>
                     <JumpLink Href="https://www.resume.id/luke256">resume</JumpLink>
+                    <JumpLink Href="https://misskey.io/@luke0256">misskey</JumpLink>
                 </MarkedContent>
             </Layer>
         </main>
