@@ -72,6 +72,7 @@ module.exports = {
                             wrapperStyle: `padding: 16px;`,
                         },
                     },
+                    `gatsby-remark-autolink-headers`
                 ],
             },
         },
