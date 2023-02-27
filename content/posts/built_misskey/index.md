@@ -19,6 +19,10 @@ https://misskey.luke256.dev
 **注意**  
 RaspberryPiのOSが古い(2020くらい?)とdocker諸々が入ってくれないので、一度OSを吹き飛ばしてから最新のものを入れることを推奨
 
+### 追記(2023-02-27)
+OSは64bitを使うことをお勧めします。  
+(32bitだとdockerが動いてもcypressが32bitに対応してくれていない)
+
 # dockerのインストール
 まずはdockerが必要なのでインストール
 
