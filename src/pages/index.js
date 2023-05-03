@@ -16,7 +16,7 @@ const Index = ({ data }) => {
             <Layer PageTitle="Home">
                 <MarkedContent Title="About Me" background="#DADEE5">
                     <p>
-                        プログラミング好きの高校二年生です。中学一年生からC++に触れて、Pythonなども使いながら競技プログラミング/アプリ開発などをやってます。<br/>
+                        プログラミング好きの高校三年生です。中学一年生からC++に触れて、Pythonなども使いながら競技プログラミング/アプリ開発などをやってます。<br/>
                         たまにボルダリングをやってたりします
                     </p>
                     <LinkButton to='/about'>About</LinkButton>
